@@ -1,21 +1,15 @@
 .para,
 .small-para {
-  color: hsl(0, 100%, 50%);
-}
-
-.small-para {
-  font-size: 14px;
+  color: hsl(0, 100%, 50%); /* red text */
 }
 
 .para {
   font-size: 22px;
-}
+} /* Moved ahead in the file to allow .small-para slector to supersede */
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+.small-para {
+  font-size: 14px;
+}
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -23,7 +17,13 @@
   font-size: 20px;
 }
 
-.child {
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+div.text div.child {
   color: red;
   font-size: 14px;
 }
